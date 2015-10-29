@@ -1,16 +1,32 @@
 var elixir = require('laravel-elixir');
+var gulp = require('gulp');
+var fs = require('fs');
+var del = require('del');
+var task = elixir.Task;
 
-/*
- |--------------------------------------------------------------------------
- | Elixir Asset Management
- |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Laravel application. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
- |
- */
+require('elixir-juice'); 
+
+elixir.extend('prioritiseJquery', function(message) {
+
+    new task('prioritiseJquery', function() {
+        fs.rename("./resources/assets/vendor/jquery", "./resources/assets/vendor/0jquery");
+    });
+
+});
+
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.less('style.less').scripts('main.js');
+
+    del.sync('./resources/assets/vendor');
+
+     mix.bower({
+        src: './resources/bower_components',
+        output: './resources/assets/vendor'
+    }).prioritiseJquery();
+
+
+    mix.scripts('./resources/assets/vendor/**/*.js', 'public/js/vendor.js');
+    mix.styles('./resources/assets/vendor/**/*.css', 'public/css/vendor.css');
 });
+

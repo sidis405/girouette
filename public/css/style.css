@@ -37,8 +37,7 @@ header .navbar .navbar-brand {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   text-align: center;
   text-indent: -9999px;
   background: url(../img/logo-navbar.png) no-repeat center center;
@@ -119,8 +118,7 @@ header .navbar li a:focus {
   left: 50%;
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .wrap .welcome-container h1.logo {
   text-indent: -9999px;
@@ -166,8 +164,7 @@ footer h3:after {
   top: -144px;
   left: 53%;
   -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   background: url(../img/contatti-cloud.png) no-repeat center center;
   width: 450px;
   height: 234px;
@@ -295,8 +292,7 @@ section.main h3:after {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 93%;
   height: 85%;
   border-radius: 25px;
@@ -321,8 +317,7 @@ section.main h3.beige:after {
   height: 43px;
   z-index: 5;
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .opening-carousel .slick-prev:before {
   display: none;
@@ -334,8 +329,7 @@ section.main h3.beige:after {
   height: 43px;
   z-index: 5;
   -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .opening-carousel .slick-next:before {
   display: none;
@@ -485,8 +479,7 @@ section.gallery .project:before {
   width: 30%;
   height: 100%;
   background-size: cover;
-  -webkit-transition: 0.35s;
-          transition: 0.35s;
+  transition: 0.35s;
   z-index: 2;
 }
 section.gallery .project:after {
@@ -498,28 +491,23 @@ section.gallery .project:after {
   width: 30%;
   height: 100%;
   background-size: cover;
-  -webkit-transition: 0.35s;
-          transition: 0.35s;
+  transition: 0.35s;
   z-index: 2;
 }
 section.gallery .project:hover:before {
   left: -160px;
-  -webkit-transition: 0.35s;
-          transition: 0.35s;
+  transition: 0.35s;
 }
 section.gallery .project:hover:after {
   right: -160px;
-  -webkit-transition: 0.35s;
-          transition: 0.35s;
+  transition: 0.35s;
 }
 section.gallery .project:hover .project-img {
   -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-  -webkit-transition: 0.35s;
-          transition: 0.35s;
+  filter: grayscale(0);
+  transition: 0.35s;
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 section.gallery .project .project-desc {
   position: absolute;
@@ -539,9 +527,8 @@ section.gallery .project .project-desc p {
 section.gallery .project .project-img {
   width: 100%;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: 0.35s;
-          transition: 0.35s;
+  filter: grayscale(100%);
+  transition: 0.35s;
 }
 @media screen and (min-width: 1199px) and (max-width: 1500px) {
   section.events .eventi ul li {
@@ -581,26 +568,22 @@ section.gallery .project .project-img {
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .wrap .layer .cloud {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     left: -100px;
   }
   .wrap .layer .cloud-1 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     left: 100px;
   }
   .wrap .layer .cloud-2 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     right: -50px;
   }
   .wrap .layer .cloud-3 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     right: -50px;
   }
   .wrap .welcome-container h1.logo {
@@ -632,26 +615,22 @@ section.gallery .project .project-img {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .wrap .layer .cloud {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     left: -100px;
   }
   .wrap .layer .cloud-1 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     left: 100px;
   }
   .wrap .layer .cloud-2 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     right: -50px;
   }
   .wrap .layer .cloud-3 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     right: -50px;
   }
   .about-us {
@@ -692,22 +671,19 @@ section.gallery .project .project-img {
   }
   .wrap .welcome-container h1.logo {
     -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
     margin: 10px auto;
   }
   .wrap .welcome-container .arrow {
     -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-            transform: scale(0.5);
+    transform: scale(0.5);
   }
   .wrap .layer .cloud {
     display: none;
   }
   .wrap .layer .cloud-1 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     left: -100px;
     top: -250px;
   }
@@ -716,8 +692,7 @@ section.gallery .project .project-img {
   }
   .wrap .layer .cloud-3 {
     -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75);
+    transform: scale(0.75);
     right: -50px;
     top: -50px;
   }
@@ -839,3 +814,5 @@ section.gallery .project .project-img {
     display: block !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

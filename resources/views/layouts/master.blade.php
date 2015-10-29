@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="La Girouette">
-    <link rel="stylesheet" href="/styles/vendor.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css">
     <!--Favicon-->
@@ -31,8 +30,9 @@
     <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/styles/style.css">
-    <script src="/scripts/modernizr.js"></script>
+    <link rel="stylesheet" href="/css/vendor.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/modernizr.js"></script>
   </head>
   <body id="top">
     <!--[if lt IE 7]>
@@ -399,6 +399,6 @@
       </p>
     </div>
   </body>
-  <script src="/scripts/vendor.js"></script>
-  <script src="/scripts/main.js"></script>
+  <script src="/js/vendor.js"></script>
+  <script src="/js/main.js"></script>
 </html>

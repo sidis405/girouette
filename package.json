@@ -1,6 +1,8 @@
 {
   "private": true,
   "devDependencies": {
+    "del": "^2.0.2",
+    "elixir-juice": "^1.0.0",
     "gulp": "^3.8.8"
   },
   "dependencies": {
