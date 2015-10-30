@@ -3,6 +3,10 @@
 Homestead.yaml
 Homestead.json
 .env
+<<<<<<< Updated upstream
 /falcon
 /resources/bower_components
 /resources/assets/vendor
+=======
+.DS_Store
+>>>>>>> Stashed changes
