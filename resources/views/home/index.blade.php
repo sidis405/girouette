@@ -14,7 +14,7 @@
             <div class="col-md-4 col-sm-6 no-pad">
               <div class="project"><img src="{{$album->present()->featuredImageUrl()}}" class="project-img">
                 <div class="project-desc">
-                  <p>{{$album->title}}</p>
+                  <p>{{$album->name}}</p>
                 </div>
               </div>
             </div>
