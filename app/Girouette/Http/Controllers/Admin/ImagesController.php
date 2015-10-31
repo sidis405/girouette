@@ -3,7 +3,7 @@
 namespace Girouette\Http\Controllers\Admin;
 
 use Girouette\Repositories\AlbumsRepo;
-use Girouetterc\Utils\Media;
+use Girouette\Utils\Media;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Http\Request;
@@ -38,8 +38,7 @@ class ImagesController extends Controller
 
         $data = [
             'gallery_partial' => view("admin.gallery.gallery-partial", compact('gallery', 'model_route'))->render(),
-            'image_picker_select' => view("admin.gallery.featured.image-picker-select", compact("model", 'gallery'))->render(),
-            'image_picker_select_cover' => view("admin.gallery.cover.image-picker-cover-select", compact("model", 'gallery'))->render(),
+            'image_picker_select' => view("admin.gallery.featured.image-picker-select", compact("model", 'gallery'))->render()
         ];
 
         return $data;
@@ -47,7 +46,7 @@ class ImagesController extends Controller
     }
 
   
-    public function store(Request $request, Media $media, ActivitiesRepo $activities, StaffRepo $staff, PagesRepo $pages)
+    public function store(Request $request, Media $media, AlbumsRepo $albums)
     {
         $model = $request->input('model');
 

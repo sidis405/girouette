@@ -1,25 +1,25 @@
 <?php
 
-namespace Girouette\Commands;
+namespace Girouette\Commands\Albums;
 
 use Girouette\Commands\Command;
 
 class UpdateAlbumCommand extends Command
 {
 
+    public $album_id;
     public $name;
-      public $slug;
-      public $featured_photo_id;
+    public $featured_image_id;
 
     /**
      * Update a command instance.
      *
      * @return void
      */
-    public function __construct($name, $slug, $featured_photo_id)
+    public function __construct($album_id, $name, $featured_image_id)
     {
+        $this->album_id = $album_id;
         $this->name = $name;
-        $this->slug = $slug;
-        $this->featured_photo_id = $featured_photo_id;
+        $this->featured_image_id = $featured_image_id;
     }
 }

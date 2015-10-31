@@ -2,12 +2,12 @@
 
 namespace Girouette\Handlers\Commands\Albums;
 
-use Girouette\Commands\CreateAlbumCommand;
+use Girouette\Commands\Albums\CreateAlbumCommand;
 use Girouette\Models\Albums;
 use Illuminate\Queue\InteractsWithQueue;
 use Girouette\Repositories\AlbumsRepo;
 use Girouette\Events\Albums\AlbumWasCreated;
-use Events;
+use Event;
 
 
 class CreateAlbumCommandHandler
@@ -32,11 +32,7 @@ class CreateAlbumCommandHandler
      */
     public function handle(CreateAlbumCommand $command)
     {
-        $album_object = Albums::make(
-            $command->name,
-        $command->slug,
-        $command->featured_photo_id
-            );
+        $album_object = Albums::make($command->name);
 
         $album = $this->repo->save($album_object);
 

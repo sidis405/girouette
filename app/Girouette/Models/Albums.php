@@ -12,30 +12,36 @@ class Albums extends Model implements HasMedia
 {
     use PresentableTrait, HasMediaTrait;
 
+    protected $fillable = ['name', 'slug', 'fetured_image_id'];
+
     protected $presenter = 'Girouette\Presenters\AlbumsPresenter';
 
-    public static function make($name, $slug, $featured_photo_id)
+    public static function make($name)
     {
-        $item = new static(compact('name', 'slug', 'featured_photo_id'));
+        $slug = str_slug($name);
+
+        $item = new static(compact('name', 'slug'));
 
         return $item;
     }
 
-    public static function edit($item_id, $name, $slug, $featured_photo_id)
+    public static function edit($item_id, $name, $slug, $featured_image_id)
     {
+
         $item = static::find($item_id);
 
         $item->name = $name;
         $item->slug = $slug;
-        $item->featured_photo_id = $featured_photo_id;
+        $item->featured_image_id = $featured_image_id;
 
         return $item;
     }
 
-    public function photos(){
+   
 
-        return $this->hasMany('Girouette\Models\Photos', 'album_id');
-
+    public function featuredImage()
+    {
+        return $this->belongsTo('Girouette\Models\FeaturedImage', 'featured_image_id');
     }
 
 

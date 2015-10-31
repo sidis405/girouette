@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-orange" data-dismiss="modal">Chiudi</button>
         <button type="button" class="btn btn-primary"  data-dismiss="modal" id="confirm_featured_image">Inserisci</button>
       </div>
     </div><!-- /.modal-content -->

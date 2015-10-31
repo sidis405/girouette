@@ -10,3 +10,6 @@ Homestead.json
 =======
 .DS_Store
 >>>>>>> Stashed changes
+/falcon
+/resources/bower_components
+/resources/assets/vendor

@@ -3,7 +3,7 @@
 
 @foreach ($gallery as $media)
 
-  <option id="media_option_{{$media->id}}" data-img-src="{{ $media->getUrl() }}?w=80&h=80&fit=contain" value="{{$media->id}}" @if($model->featured_image_id == $media->id) selected @endif>{{$media->id}}</option>
+  <option id="media_option_{{$media->id}}" data-img-src="{{ $media->getUrl() }}?w=280&h=280&fit=crop" value="{{$media->id}}" @if($model->featured_image_id == $media->id) selected @endif>{{$media->id}}</option>
 @endforeach
 
 </select>

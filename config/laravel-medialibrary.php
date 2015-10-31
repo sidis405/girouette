@@ -30,6 +30,7 @@ return [
      * if your files are stored locally above the site root or on s3.
      */
     'custom_url_generator_class' => '',
+    'custom_url_generator_class' => 'Girouette\Utils\MediaLibraryUrlGenerator',
 
     's3' => [
         /*

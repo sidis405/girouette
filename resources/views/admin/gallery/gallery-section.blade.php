@@ -1,8 +1,9 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">Galleria Immagini</h3>
+<div class="card">
+    <div class="card-header">
+        <h2 class="panel-title">Galleria Immagini</h2>
+        <h3>Qui puoi caricare le immagini che andranno nella galleria</h3>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
         <div class="row">
             <div class="col-lg-12">
                 <div class="form-group dropzone-previews gallery-container">
@@ -20,7 +21,7 @@
 
                     <div class="images-container" id="images-container">
                         
-                        Non ci sono immagini associate a questo record
+                        <h6>Non ci sono immagini associate a questo record</h6>
 
                     </div>
                     
@@ -47,5 +48,5 @@
     </div>
 </div>
 
+
 @include('admin.gallery.featured.image-picker-modal', array('gallery' => $model->media))
-@include('admin.gallery.cover.image-picker-cover', array('gallery' => $model->media))

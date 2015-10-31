@@ -13,7 +13,7 @@ class MediaLibraryUrlGenerator extends BaseUrlGenerator implements UrlGenerator
 
     public function __construct()
     {
-        $this->path_prefix = '/uploads/';
+        $this->path_prefix = '/image/';
     }
 
     public function getUrl()

@@ -17,7 +17,7 @@ class BusServiceProvider extends ServiceProvider
     {
         $dispatcher->mapUsing(function ($command) {
             return Dispatcher::simpleMapping(
-                $command, '\Commands', '\Handlers\Commands'
+                $command, 'Girouette\Commands', 'Girouette\Handlers\Commands'
             );
         });
     }

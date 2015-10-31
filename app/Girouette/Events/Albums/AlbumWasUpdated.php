@@ -2,8 +2,8 @@
 
 namespace Girouette\Events\Albums;
 
-use Girouette\Events\Event;
-use Girouette\Acam\Models\Albums;
+use Event;
+use Girouette\Models\Albums;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 

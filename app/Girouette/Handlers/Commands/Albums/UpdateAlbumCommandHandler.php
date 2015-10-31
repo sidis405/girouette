@@ -1,13 +1,13 @@
 <?php
 
-namespace Girouette\Handlers\Commands;
+namespace Girouette\Handlers\Commands\Albums;
 
-use Girouette\Commands\CreateTestCommand;
+use Girouette\Commands\Albums\UpdateAlbumCommand;
 use Girouette\Models\Albums;
 use Illuminate\Queue\InteractsWithQueue;
 use Girouette\Repositories\AlbumsRepo;
 use Girouette\Events\Albums\AlbumWasUpdated;
-use Events;
+use Event;
 
 
 class UpdateAlbumCommandHandler
@@ -30,13 +30,13 @@ class UpdateAlbumCommandHandler
      * @param  UpdateAlbumCommand  $command
      * @return void
      */
-    public function handle(CreateAlbumCommand $command)
+    public function handle(UpdateAlbumCommand $command)
     {
         $album_object = Albums::edit(
-            $command->id,
-            $command->name,
-        $command->slug,
-        $command->featured_photo_id
+        $command->album_id,
+        $command->name,
+        str_slug($command->name),
+        $command->featured_image_id
             );
 
         $album = $this->repo->save($album_object);

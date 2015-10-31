@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Girouette\Repositories\AlbumsRepo;
+use Girouette\Models\Albums;
 
 
 class AlbumsController extends Controller
@@ -43,8 +44,10 @@ class AlbumsController extends Controller
     public function store(Request $request)
     {
         $album = $this->dispatchFrom('Girouette\Commands\Albums\CreateAlbumCommand', $request);
+
+        if ( $album ) flash()->success('Progetto creato con successo.');
         
-        return redirect()->to('/admin/albums/' . $album->id .'/edit');
+        return redirect()->to('/admin/progetti/' . $album->id .'/modifica');
     }
 
     /**
@@ -82,9 +85,12 @@ class AlbumsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $album = $this->dispatchFrom('Girouette\Commands\Albums\CreateAlbumCommand', $request);
+    // return $request->input();
+        $album = $this->dispatchFrom('Girouette\Commands\Albums\UpdateAlbumCommand', $request);
 
-        return redirect()->to('/admin/albums/' . $album->id .'/edit');
+        if ( $album ) flash()->success('Progetto modificato con successo.');
+
+        return redirect()->to('/admin/progetti/' . $album->id .'/modifica');
     }
 
     /**
@@ -93,8 +99,28 @@ class AlbumsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+
+    public function destroy($id, AlbumsRepo $album_repo)
     {
-        return Albums::delete($id);
+        $delete = $album_repo->remove($id);
+
+        flash()->success('Progetto cancellato con successo.');
+
+        return redirect()->to('/admin/progetti/');
+    }
+
+    /**
+     * Remove the specified activity from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function destroyImage(Request $request, AlbumsRepo $album_repo)
+    {
+        $image_id = $request->input('image_id');
+
+        $delete = $album_repo->removeImage($image_id);
+
+        return json_encode('true');
     }
 }
