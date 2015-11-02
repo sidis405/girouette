@@ -54,15 +54,16 @@
               </div>
 
             </div>
-            <div class="centered">
-              <button type="submit" class="btn btn-green">Salva</button>
-              <a href="/admin/progetti" class="btn btn-orange">Abbandona</a>
-            </div>
+            
         </form>
         <br>
 
       
       @include('admin.gallery.gallery-section', array('model' => $album, 'model_name' => 'albums', 'model_route' => 'progetti'))
+      <div class="centered">
+              <button id="toolbar-save-form" class="btn btn-green">Salva</button>
+              <a href="/admin/progetti" class="btn btn-orange">Abbandona</a>
+            </div>
         </div>
 
       </div>

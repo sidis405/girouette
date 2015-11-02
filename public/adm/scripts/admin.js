@@ -146,6 +146,10 @@ $('#toolbar-save').click(function(){
     $('#album_editing_form').submit();
 });
 
+$('#toolbar-save-form').click(function(){
+    $('#album_editing_form').submit();
+});
+
 $('#toolbar-delete').click(function(){
     $('#album_deletion_form').submit();
 });
