@@ -145,6 +145,7 @@ header .navbar li a:focus {
 }
 footer {
   padding: 60px 0 0 0;
+  overflow: hidden;
 }
 footer .footer {
   padding: 0 0 60px 0;
@@ -469,6 +470,8 @@ section.gallery .project {
   overflow: hidden;
   height: 100%;
   box-shadow: 10px 10px 0px 0px rgba(50, 50, 50, 0.75);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 section.gallery .project:before {
   position: absolute;
@@ -481,6 +484,8 @@ section.gallery .project:before {
   background-size: cover;
   transition: 0.35s;
   z-index: 2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 section.gallery .project:after {
   position: absolute;
@@ -493,6 +498,8 @@ section.gallery .project:after {
   background-size: cover;
   transition: 0.35s;
   z-index: 2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 section.gallery .project:hover:before {
   left: -160px;

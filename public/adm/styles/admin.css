@@ -75,13 +75,6 @@ h1.logo {
     height: 67px;
 }
 
-.login-label {
-    display: none;
-}
-.admin-container {
-    margin-top: 5%;
-}
-
 .admin-page-title {
     font-weight: 100;
 }

@@ -32,7 +32,7 @@
 
 @include('layouts.errors')
 
-<div class="admin-container col-md-offset-5 col-md-3">
+<div class="admin-container col-md-offset-5 col-md-2">
 
 
 <div class="avatar"><img src="/adm/img/logo-admin.png" alt=""></div>

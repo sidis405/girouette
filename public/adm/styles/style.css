@@ -3,6 +3,19 @@ body {
   font-family: 'Roboto';
   height: 100%;
 }
+
+.admin-container .avatar {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.login-label {
+    display: none;
+}
+.admin-container {
+    margin-top: 5%;
+}
+
 section.main {
   padding: 0 0 0 230px;
   -webkit-transition: 0.35s;
