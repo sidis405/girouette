@@ -15,9 +15,9 @@ $(document).ready(function() {
 });
 
 // Make table linkable
-$(document).ready(function(){
-    $('table tr').click(function(){
-        window.location = $(this).attr('href');
-        return false;
-    });
-});
+// $(document).ready(function(){
+//     $('table tr').click(function(){
+//         window.location = $(this).attr('href');
+//         return false;
+//     });
+// });

@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/modernizr.js"></script>
+    @yield('header_extras')
   </head>
   <body id="top">
     <!--[if lt IE 7]>
@@ -328,4 +329,5 @@
   </body>
   <script src="/js/vendor.js"></script>
   <script src="/js/main.js"></script>
+  @yield('footer_extras')
 </html>
