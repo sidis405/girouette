@@ -119,25 +119,15 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-6 no-pad">
-              <div class="who-box"><img src="http://placehold.it/260x260">
+              <div class="who-box"><img src="img/martina.jpg">
                 <h4>Martina Miozzi</h4>
-                <p>"Lorem Ipsum dolor sit amet"</p>
-                <div class="icons">
-                  <div class="facebook"></div>
-                  <div class="instagram"></div>
-                  <div class="mail"></div>
-                </div>
+                <p>"Se puoi sognarlo, puoi farlo"</p>
+                <p style="font-style: italic;">W.D.</p>               
               </div>
             </div>
             <div class="col-sm-6 no-pad">
-              <div class="who-box"><img src="http://placehold.it/260x260">
-                <h4>Martina Miozzi</h4>
-                <p>"Lorem Ipsum dolor sit amet"</p>
-                <div class="icons">
-                  <div class="facebook"></div>
-                  <div class="instagram"></div>
-                  <div class="mail"></div>
-                </div>
+              <div class="who-box"><img src="img/rosangela.jpg">
+                <h4>Rosangela Lobato</h4>                
               </div>
             </div>
           </div>
@@ -182,7 +172,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-6 no-pad">
                   <div class="service-box">
                     <div class="icon"><img src="/img/icons/allestimenti.png"></div>
-                    <p>Allestimenti e materiali d'allestimento</p>
+                    <p>Allestimenti</p>
                   </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 no-pad">
@@ -230,7 +220,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-6 no-pad">
                   <div class="service-box">
                     <div class="icon"><img src="/img/icons/photo.png"></div>
-                    <p>Photo shooting &amp; Photo boot</p>
+                    <p>Photo shooting</p>
                   </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6 no-pad">
@@ -296,12 +286,19 @@
       </div>
       <div class="container-fluid">
         <div id="partners" class="row partners">
-          <div><img src="http://placehold.it/200x50"></div>
-          <div><img src="http://placehold.it/200x50"></div>
-          <div><img src="http://placehold.it/200x50"></div>
-          <div><img src="http://placehold.it/200x50"></div>
-          <div><img src="http://placehold.it/200x50"></div>
-          <div><img src="http://placehold.it/200x50"></div>
+          <div><a target="_blank" href="http://www.adoroparty.it/"><img src="img/partners/adoro-party.jpg"></div></a>
+          <div><a target="_blank" href="http://www.ristoranteangelina.com/"><img src="img/partners/angelina.jpg"></div></a>
+          <div><img src="img/partners/banco39.jpg"></div>
+          <div><a target="_blank" href="http://dolcealice.it/"><img src="img/partners/dolcealice.jpg"></div></a>
+          <div><a target="_blank" href="http://www.ille-roif.it/ita/index.html"><img src="img/partners/ille-roif.jpg"></div></a>
+          <div><a target="_blank" href="http://www.italianfashionista.com/"><img src="img/partners/italianfashionista.jpg"></div></a>
+          <div><img src="img/partners/ladyg.jpg"></div>
+          <div><img src="img/partners/living-orange.jpg"></div>
+          <div><a target="_blank" href="http://www.magiclollo.it/"><img src="img/partners/magolollo.jpg"></div></a>
+          <div><img src="img/partners/marcocecilia.jpg"></div>
+          <div><img src="img/partners/nail-factory.jpg"></div>
+          <div><a target="_blank" href="http://www.ristorantedaltoscano.it/it/"><img src="img/partners/ristorante-toscano.jpg"></div></a>
+          <div><img src="img/partners/v-cafe.jpg"></div>
         </div>
         <div class="row copyright">
           <div class="col-sm-6">
@@ -318,13 +315,12 @@
     </footer>
     <div id="rendez-popup" class="white-popup mfp-hide"><img src="/img/rendez-logo.jpg">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Les Rendez-Vous nasce dall’idea di aggregazione delle persone verso un’interazione reale seguendo Sogni, desideri, e Necessità individuali.<br><br>
+        L’inserimento in questo circolo è proiettato sulle persone che vogliono ritrovare l’entusiasmo, il divertimento e soprattutto conoscere il proprio principe azzurro o principessa.<br><br>
+        Il c’era una volta e vissero felici e contenti oggi si ritrova qui:
+        Un ritorno alla dolce vita reale!
       </p>
+      <a href="mailto:info@lagirouette.it"><div class="btn btn-primary">Contattaci</div></a>
     </div>
   </body>
   <script src="/js/vendor.js"></script>

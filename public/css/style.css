@@ -230,9 +230,9 @@ footer .container-fluid {
   padding: 0;
 }
 footer .partners {
-  padding: 60px 0;
+  padding: 30px 0;
   margin: 40px 0 0 0;
-  background: #f6f0e5;
+  background: #fff;
 }
 footer .partners div {
   outline: none;
@@ -240,6 +240,10 @@ footer .partners div {
 footer .partners img {
   text-align: center;
   margin: auto;
+}
+footer .partners img:focus,
+footer .partners img:hover {
+  outline: none;
 }
 footer .copyright {
   margin: 0;
@@ -269,6 +273,20 @@ footer .copyright a:hover {
 }
 .white-popup p {
   text-align: justify;
+}
+.white-popup .btn {
+  display: block;
+  margin: 25px auto;
+  background: #638f94;
+  border: 0;
+  color: #fff;
+  font-family: 'Quicksand';
+  width: 130px;
+  text-transform: uppercase;
+}
+.white-popup a:hover,
+.white-popup a:focus {
+  text-decoration: none;
 }
 section.main {
   margin-top: 30px;
@@ -364,6 +382,7 @@ section.who .who-box {
 section.who .who-box img {
   border-radius: 50%;
   margin-bottom: 40px;
+  border: 6px solid #f6f0e5;
 }
 section.who .who-box h4 {
   font-size: 38px;
@@ -372,33 +391,6 @@ section.who .who-box h4 {
 section.who .who-box p {
   font-size: 22px;
   color: #fff;
-}
-section.who .who-box .icons {
-  margin: 25px auto;
-}
-section.who .who-box .icons div:nth-child(2) {
-  margin: 0 35px;
-}
-section.who .who-box .icons .facebook {
-  display: inline-block;
-  background: url(../img/icons.png) no-repeat;
-  width: 33px;
-  height: 33px;
-  background-position: left top;
-}
-section.who .who-box .icons .instagram {
-  display: inline-block;
-  background: url(../img/icons.png) no-repeat;
-  width: 33px;
-  height: 33px;
-  background-position: 50% 0px;
-}
-section.who .who-box .icons .mail {
-  display: inline-block;
-  background: url(../img/icons.png) no-repeat;
-  width: 33px;
-  height: 33px;
-  background-position: right top;
 }
 section.events {
   padding: 120px 0;

@@ -15,13 +15,21 @@ $('.opening-carousel').slick({
 $('.partners').slick({
   dots: false,
   infinite: true,
-  speed: 7000,
+  // speed: 7000,
   autoplay: true,
-  autoplaySpeed: -1,
-  slidesToShow: 3,
+  autoplaySpeed: 2000,
+  slidesToShow: 4,
   arrows: false,
   cssEase: 'linear',
   responsive: [
+    {
+     breakpoint: 1199,
+     settings: {
+       slidesToShow: 2,
+       slidesToScroll: 1,
+       infinite: true       
+     }
+   },
    {
      breakpoint: 767,
      settings: {
