@@ -64,7 +64,7 @@ class ImagesController extends Controller
         $url = substr(base64_decode($url), 1);
         // $img = Image::make(file_get_contents($url));
 
-        $img = Image::make($url)->insert('img/watermark.png', 'bottom-right', 10, 10);
+        $img = Image::make($url)->insert('img/watermark.png', 'bottom-right', 60, 60);
 
         return $img->response('jpg');
 
