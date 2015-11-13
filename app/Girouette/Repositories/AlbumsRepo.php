@@ -25,7 +25,7 @@ class AlbumsRepo
 
     public function getAll()
     {
-        return Albums::with('media', 'featuredImage')->get();
+        return Albums::with('media', 'featuredImage')->last()->get();
     } 
 
     public function getById($id)
