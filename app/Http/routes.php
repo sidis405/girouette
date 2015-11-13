@@ -21,6 +21,8 @@ Route::get('image/{path}', function (League\Glide\Server $server, Illuminate\Htt
 
 })->where('path', '.+');
 
+Route::get('process/{url}', '\Girouette\Http\Controllers\Admin\ImagesController@watermark');
+
 Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
 
     Route::post('model/upload_image', '\Girouette\Http\Controllers\Admin\ImagesController@store');

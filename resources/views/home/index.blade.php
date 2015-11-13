@@ -38,23 +38,23 @@
 
 <!-- UI JS file -->
 <script src="/js/photoswipe-ui-default.js"></script> 
-<script src="/js/watermark.jquery.min.js"></script> 
+
 
 <script>
 @foreach($albums as $album)
 
     var openPhotoSwipe_{{$album->id}} = function() {
         // var pswpElement = document.querySelectorAll('#');
-        var pswpElement = document.querySelectorAll('.ps_{{$album->id}}')[0];
+        var pswpElement_{{$album->id}} = document.querySelectorAll('.ps_{{$album->id}}')[0];
 
 
         // build items array
-        var items = [
+        var items_{{$album->id}} = [
 
             @foreach($album->getMedia() as $media)
 
             {
-                src: '{{$media->getUrl()}}',
+                src: '/process/<?php echo base64_encode($media->getUrl()); ?>',
                 w: 0,
                 h: 0
             },
@@ -64,7 +64,7 @@
         
 
         // define options (if needed)
-        var options = {
+        var options_{{$album->id}} = {
                  // history & focus options are disabled on CodePen        
             history: false,
             focus: false,
@@ -74,23 +74,22 @@
             
         };
         
-        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.listen('gettingData', function(index, item) {
+        var gallery = new PhotoSwipe( pswpElement_{{$album->id}}, PhotoSwipeUI_Default, items_{{$album->id}}, options_{{$album->id}});
+        gallery.listen('gettingData', function(index, item) {                
                 if (item.w < 1 || item.h < 1) { // unknown size
                 var img = new Image(); 
                 img.onload = function() { // will get size after load
                 item.w = this.width; // set image width
                 item.h = this.height; // set image height
                    gallery.invalidateCurrItems(); // reinit Items
-            // watermarkImages();
-                   gallery.updateSize(true); // reinit Items
+                   gallery.updateSize(true); // reinit Items                   
                 }
-            img.src = item.src; // let's download image
-
+            img.src = item.src; // let's download image        
             }
         });
         gallery.init();
-    };
+
+    };        
 
     // openPhotoSwipe();
 
@@ -98,26 +97,9 @@
     document.getElementById('ps_trigger_{{$album->id}}').onclick = openPhotoSwipe_{{$album->id}};
 
 @endforeach
-</script>
-
-<script>
-
-
-function watermarkImages()
-{
-    $(document).watermark(
-      {
-        // "className" : "project-img",
-        "className" : "pswp__img",
-        "position" : "bottom-right",
-        "path":"/img/logo.png"
-      }
-      );
-  
-}
-
 
 
 </script>
+
 
 @stop

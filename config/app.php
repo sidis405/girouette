@@ -151,8 +151,8 @@ return [
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
         // 'Vinkla\Hashids\HashidsServiceProvider',
         // 'Rutorika\Sortable\SortableServiceProvider',
-        App\Providers\BusServiceProvider::class
-
+        App\Providers\BusServiceProvider::class,
+        'Intervention\Image\ImageServiceProvider',
     ],
 
     /*
@@ -206,6 +206,7 @@ return [
         'Form'=> 'Illuminate\Html\FormFacade',
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         // 'Hashids' => 'Vinkla\Hashids\Facades\Hashids'
+        'Image' => 'Intervention\Image\Facades\Image'
 
     ],
 

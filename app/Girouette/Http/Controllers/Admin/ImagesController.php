@@ -7,6 +7,7 @@ use Girouette\Utils\Media;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class ImagesController extends Controller
 {
@@ -56,5 +57,24 @@ class ImagesController extends Controller
 
         return $media->attach($item, $request->file('file'));
 
+    }
+
+    public function watermark($url)
+    {
+        $url = substr(base64_decode($url), 1);
+        // $img = Image::make(file_get_contents($url));
+
+        $img = Image::make($url)->insert('img/watermark.png', 'bottom-right', 10, 10);
+
+        return $img->response('jpg');
+
+               // // create response and add encoded image data
+               // $response = Response::make($img->encode('jpg'));
+
+               // // set content-type
+               // $response->header('Content-Type', 'image/jpg');
+
+               // output
+               // return $img->response;
     }
 }
