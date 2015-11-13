@@ -38,6 +38,7 @@
 
 <!-- UI JS file -->
 <script src="/js/photoswipe-ui-default.js"></script> 
+<script src="/js/watermark.jquery.min.js"></script> 
 
 <script>
 @foreach($albums as $album)
@@ -81,9 +82,11 @@
                 item.w = this.width; // set image width
                 item.h = this.height; // set image height
                    gallery.invalidateCurrItems(); // reinit Items
+            // watermarkImages();
                    gallery.updateSize(true); // reinit Items
                 }
             img.src = item.src; // let's download image
+
             }
         });
         gallery.init();
@@ -95,6 +98,26 @@
     document.getElementById('ps_trigger_{{$album->id}}').onclick = openPhotoSwipe_{{$album->id}};
 
 @endforeach
+</script>
+
+<script>
+
+
+function watermarkImages()
+{
+    $(document).watermark(
+      {
+        // "className" : "project-img",
+        "className" : "pswp__img",
+        "position" : "bottom-right",
+        "path":"/img/logo.png"
+      }
+      );
+  
+}
+
+
+
 </script>
 
 @stop
