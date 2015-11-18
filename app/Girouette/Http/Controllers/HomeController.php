@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         $out = '';
         $result = array();
-        exec("git pull https://sidis405github.com/sidis405/girouette.git master", $array());
+        exec("git pull https://sidis405github.com/sidis405/girouette.git master", $result);
         foreach ($result as $line) {
         $out .= $line . "<br>";
         }
