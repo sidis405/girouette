@@ -25,7 +25,7 @@ class HomeController extends Controller
 
     public function pull()
     {
-        exec("cd /home/www/sidrit.com/girouette/; git pull origin master");
+        exec("sh /home/www/sidrit.com/girouette/git.sh");
         return 'Pulled all changes from origin/master';
     }
 
