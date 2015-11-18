@@ -28,10 +28,10 @@ class HomeController extends Controller
         $out = '';
         $result = array();
         $result = shell_exec("/usr/bin/git -c /home/www/sidrit.com/girouette pull shell_exec 2>&1");
-        foreach ($result as $line) {
-        $out .= $line . "<br>";
-        }
-        return $out;
+        // foreach ($result as $line) {
+        // $out .= $line . "<br>";
+        // }
+        return $result;
     }
 
 }
