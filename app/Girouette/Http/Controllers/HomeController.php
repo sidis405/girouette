@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         $out = '';
         $result = array();
-        exec("pull", $result);
+        exec("ls", $result);
         foreach ($result as $line) {
         $out .= $line . "<br>";
         }
