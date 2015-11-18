@@ -25,9 +25,13 @@ class HomeController extends Controller
 
     public function pull()
     {
-        passthru("sh /home/www/sidrit.com/girouette/git.sh");
-        exit(0);
-        return 'Pulled all changes from origin/master';
+        $out = '';
+        $result = array();
+        exec("git pull https://sidis405github.com/sidis405/girouette.git master", $result);
+        foreach ($result as $line) {
+        $out .= $line . "<br>";
+        }
+        return $out;
     }
 
 }
