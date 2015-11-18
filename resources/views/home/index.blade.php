@@ -54,7 +54,7 @@
             @foreach($album->getMedia() as $media)
 
             {
-                src: '/process/<?php echo base64_encode($media->getUrl()); ?>',
+                src: '{{$media->getUrl()}}',
                 w: 0,
                 h: 0
             },

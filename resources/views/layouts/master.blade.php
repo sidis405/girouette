@@ -116,6 +116,7 @@
         </div>
       </div>
       <section class="who">
+        <img class="img-responsive separator" src="img/separator.png" alt="">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 no-pad">
@@ -127,7 +128,9 @@
             </div>
             <div class="col-sm-6 no-pad">
               <div class="who-box"><img src="img/rosangela.jpg">
-                <h4>Rosangela Lobato</h4>                
+                <h4>Rosangela Lobato</h4>
+                <p>"Tutti i sogni possono diventare realtà se solo abbiamo il coraggio di inseguirli"</p>
+                <p style="font-style: italic;">W.D.</p>
               </div>
             </div>
           </div>
