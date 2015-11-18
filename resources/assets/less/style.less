@@ -78,23 +78,35 @@ section.main {
 		}
 	}
 	.slick-prev {
-		left: 50px;
+		left: 20px;
 		background: url(../img/arrow.png) no-repeat center center;
 		width: 81px;
 		height: 43px;
 		z-index: 5;
+		opacity: 0.5;
+		transition: 0.3s;
 		transform: rotate(90deg);
+		&:hover {
+			opacity: 1;
+			transition: 0.3s;
+		}
 		&:before {
 			display: none;
 		}
 	}
 	.slick-next {
-		right: 50px;
+		right: 20px;
 		background: url(../img/arrow.png) no-repeat center center;
 		width: 81px;
 		height: 43px;
 		z-index: 5;
+		opacity: 0.5;
+		transition: 0.3s;
 		transform: rotate(-90deg);
+		&:hover {
+			opacity: 1;
+			transition: 0.3s;
+		}
 		&:before {
 			display: none;
 		}
