@@ -19,7 +19,7 @@ class MailController extends Controller
 
         $form = $this->makeFormData($request->input('form'));
 
-        $rec = "forge405@gmail.com";
+        $rec = "michele@officine06.com";
         $subject = "Richiesta di contatto";
         $to = "La Girouette Admin";
 

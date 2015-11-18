@@ -6,12 +6,14 @@
 </head>
 <body>
 
-Hai una nuova mail di contatto dal sito:
+Hai una nuova mail di contatto dal sito.
+<br>
+<br>
 
-Nome: {{$data['form']['name']}}
-Tel: {{$data['form']['telephone']}}
-Email: {{$data['form']['email']}}
-Messaggio: {{$data['form']['message']}}
+Nome: {{$data['form']['name']}}<br>
+Tel: {{$data['form']['telephone']}}<br>
+Email: {{$data['form']['email']}}<br>
+Messaggio: {{$data['form']['message']}}<br>
 
 
 	
