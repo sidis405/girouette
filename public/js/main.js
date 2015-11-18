@@ -78,4 +78,49 @@ $('.open-popup').magnificPopup({
   type:'inline',
   midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 });
+
+$('#contact_form').submit(function(e){
+  e.preventDefault();
+
+  // alert('invia mail');
+
+  sendContactMail();
+
+})
+
+function sendContactMail() {
+
+    var token = $('meta[name="_token"]').attr('content');
+
+    // console.log(last_activity);
+    var formData = $('#contact_form').serializeArray();
+
+    $.ajax({
+        url: "/contact_send",
+        type: 'POST',
+        data: {_token : token, form: formData},
+        success: function(data) {
+
+            // alert('mail spedita');
+
+            $('.write.footer-box').html('Grazie per averci contattato. Vi risponderemo al più presto possibile.');
+
+            return false;
+        },
+        error: function(XMLHttpRequest, textstatus, error) {
+
+            return false;
+
+        }
+    });
+
+    return false;
+
+
+}
+
+
+
+
+
 //# sourceMappingURL=main.js.map

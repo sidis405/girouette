@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/modernizr.js"></script>
+    <meta name="_token" content="{{ csrf_token() }}" />
     @yield('header_extras')
   </head>
   <body id="top">
@@ -272,9 +273,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="write footer-box">
-              <h4>Scrivici</h4>
-            </div>
+            @include('layouts.contact_form')
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="social footer-box">

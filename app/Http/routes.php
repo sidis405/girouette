@@ -10,6 +10,8 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
+Route::post('contact_send', '\Girouette\Http\Controllers\MailController@send');
+
 Route::get('/', '\Girouette\Http\Controllers\HomeController@index');
 
 Route::get('image/{path}', function (League\Glide\Server $server, Illuminate\Http\Request $request, $path) {
