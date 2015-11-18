@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         $out = '';
         $result = array();
-        exec("ls", $result);
+        exec("cd /home/www/sidrit.com/girouette/; pull", $result);
         foreach ($result as $line) {
         $out .= $line . "<br>";
         }
