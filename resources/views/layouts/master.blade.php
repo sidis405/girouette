@@ -324,8 +324,8 @@
     </footer>
     <div id="rendez-popup" class="white-popup mfp-hide"><img src="/img/rendez-logo.jpg">
       <p>       
-        Inseguire i propri sogni nel cassetto, realizzare i desideri di una vita senza mai dimenticare le necessità dei singoli individui.
-        Les Rendez-Vous nasce con questo obiettivo.        
+        Inseguire i propri sogni nel cassetto, realizzare i desideri di una vita senza mai dimenticare le necessità dei singoli individui.<br><br>
+        Les Rendez-Vous nasce con questo obiettivo.<br><br>
         L’inserimento in questo circolo è pensato per persone che vogliono ritrovare l’entusiasmo, il divertimento e soprattutto la voglia di conoscere il proprio principe azzurro o principessa.<br><br>
         Il "c’era una volta e vissero felici e contenti" oggi si ritrova qui:
         Un ritorno alla dolce vita reale!
