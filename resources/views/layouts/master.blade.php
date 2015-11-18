@@ -323,10 +323,11 @@
       </div>
     </footer>
     <div id="rendez-popup" class="white-popup mfp-hide"><img src="/img/rendez-logo.jpg">
-      <p>
-        Les Rendez-Vous nasce dall’idea di aggregazione delle persone verso un’interazione reale seguendo Sogni, desideri, e Necessità individuali.<br><br>
-        L’inserimento in questo circolo è proiettato sulle persone che vogliono ritrovare l’entusiasmo, il divertimento e soprattutto conoscere il proprio principe azzurro o principessa.<br><br>
-        Il c’era una volta e vissero felici e contenti oggi si ritrova qui:
+      <p>       
+        Inseguire i propri sogni nel cassetto, realizzare i desideri di una vita senza mai dimenticare le necessità dei singoli individui.
+        Les Rendez-Vous nasce con questo obiettivo.        
+        L’inserimento in questo circolo è pensato per persone che vogliono ritrovare l’entusiasmo, il divertimento e soprattutto la voglia di conoscere il proprio principe azzurro o principessa.<br><br>
+        Il "c’era una volta e vissero felici e contenti" oggi si ritrova qui:
         Un ritorno alla dolce vita reale!
       </p>
       <a href="mailto:info@lagirouette.it"><div class="btn btn-primary">Contattaci</div></a>
