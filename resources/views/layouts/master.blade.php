@@ -81,7 +81,7 @@
           <div class="cloud-3">     </div>
         </li>
       </ul>
-      <div class="welcome-container">
+      <div class="welcome-container">        
         <h1 class="logo">La Girouette</h1>
         <h2 class="slogan">
           Rendi unica ogni occasione <br>

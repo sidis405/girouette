@@ -460,7 +460,6 @@ section.gallery .project {
   position: relative;
   margin: 10px;
   overflow: hidden;
-  cursor: pointer;
   height: 100%;
   box-shadow: 10px 10px 0px 0px rgba(50, 50, 50, 0.75);
   -webkit-transform: translate3d(0, 0, 0);
