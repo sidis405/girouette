@@ -8,7 +8,8 @@ $(document).ready(function() {
 $('.opening-carousel').slick({
   dots: false,
   infinite: true,
-  speed: 500,  
+  speed: 500, 
+  autoplay: true, 
   cssEase: 'linear'
 });
 
@@ -103,7 +104,7 @@ function sendContactMail() {
 
             // alert('mail spedita');
 
-            $('.write.footer-box').html('Grazie per averci contattato. Vi risponderemo al più presto possibile.');
+            $('.write.footer-box').html('<div class="success_contact">Grazie per averci contattato. Vi risponderemo il prima possibile.</div>');
 
             return false;
         },

@@ -100,6 +100,13 @@
               <div class="slide slide2"></div>
               <div class="slide slide3"></div>
               <div class="slide slide4"></div>
+              <div class="slide slide5"></div>
+              <div class="slide slide6"></div>
+              <div class="slide slide7"></div>
+              <div class="slide slide8"></div>
+              <div class="slide slide9"></div>
+              <div class="slide slide10"></div>
+              <div class="slide slide11"></div>
             </div>
           </div>
           <div class="col-md-4 no-pad">
@@ -280,7 +287,7 @@
               <h4>Social</h4>
               <p>Resta in contatto con noi!</p>
               <div class="social"><a href="https://www.facebook.com/La-Girouette-1430927090500419/?ref=ts" target="_blank">
-                  <div class="facebook"></div></a><a href="">
+                  <div class="facebook"></div></a><a href="https://instagram.com/la_girouette/" target="_blank">
                   <div class="instagram"></div></a></div>
             </div>
           </div>

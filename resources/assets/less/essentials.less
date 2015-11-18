@@ -5,22 +5,21 @@
 
 html {height: 100%;}
 
-// @keyframes falling{
-//   0%   {left: 45%; top: 0; opacity: 1;}
-//   25%  {left: 55%; top: 8%; opacity: 1;}
-//   50%  {left: 45%; top: 16%; opacity: 1;}
-//   75%  { left: 55%; top: 20%; opacity: 1;}
-//   100% {left: 50.12%; top: 25.5%; opacity: 1;}
-// }
+::-webkit-input-placeholder {
+   font-family: 'Quicksand';
+}
 
-// .mary {
-// 	animation: falling 5s linear 1;
-// 	position: absolute;
-// 	left: 50.12%;
-// 	top: 25.5%;
-// 	transform: translate(-50%,0);
-// 	opacity: 0;
-// }
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Quicksand';  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Quicksand';  
+}
+
+:-ms-input-placeholder {  
+   font-family: 'Quicksand';  
+}
 
 
 h1,h2,h3,h4 {
@@ -181,6 +180,7 @@ footer {
 		background: @beige;
 		padding: 20px;
 		box-shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.75);
+		min-height: 325px;
 		h4 {
 			font-family: 'Quicksand';
 			font-weight: 700;
@@ -214,7 +214,8 @@ footer {
 			p {
 				margin: 15px 0 25px 0;
 			}
-			a:hover {text-decoration: none;}
+			a:hover {text-decoration: none !important;}
+			a:focus {text-decoration: none !important;}
 			.facebook {
 				display: inline-block;
 				background: url(../img/social-footer.png) no-repeat;
@@ -283,3 +284,27 @@ footer {
   a:hover, a:focus {text-decoration: none;}
 }
 
+#contact_form {
+	.form-control {
+		border-radius: 0;
+		box-shadow: none;
+	}
+	label {display: none;}
+	button {
+		border: 0;		
+		background: @blue;
+		border-radius: 15px;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 5px 20px;
+		font-family: 'Quicksand';
+	}
+}
+
+.success_contact {
+	padding: 10px;
+	background: green;
+	font-family: 'Quicksand';
+	font-size: 16px;
+	color: #fff;
+}
