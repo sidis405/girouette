@@ -263,6 +263,9 @@ footer .partners img:focus,
 footer .partners img:hover {
   outline: none;
 }
+footer .partners a:focus {
+  outline: none;
+}
 footer .copyright {
   margin: 0;
 }
@@ -852,12 +855,6 @@ section.gallery .project .project-img {
   }
   footer .copyright p.pull-right {
     float: none !important;
-  }
-  section.gallery .project:before {
-    display: none;
-  }
-  section.gallery .project:after {
-    display: none;
   }
 }
 @media screen and (max-width: 1199px) {

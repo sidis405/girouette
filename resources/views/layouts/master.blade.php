@@ -156,7 +156,7 @@
                       <li>Feste a tema</li>
                       <li>Baby shower</li>
                       <li>Compleanni</li>
-                      <li>10 Compleanno</li>
+                      <li>1° Compleanno</li>
                       <li>Battesimi</li>
                       <li>Comunioni</li>
                       <li>Cresime</li>
@@ -308,6 +308,8 @@
           <div><img src="img/partners/nail-factory.jpg"></div>
           <div><a target="_blank" href="http://www.ristorantedaltoscano.it/it/"><img src="img/partners/ristorante-toscano.jpg"></div></a>
           <div><img src="img/partners/v-cafe.jpg"></div>
+          <div><a target="_blank" href="https://www.facebook.com/CastroniOttaviano/?fref=ts"><img src="img/partners/castroni.jpg"></a></div>
+          <div><img src="img/partners/ille-roif-roma.jpg"></div>
         </div>
         <div class="row copyright">
           <div class="col-sm-6">
