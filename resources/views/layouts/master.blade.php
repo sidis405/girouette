@@ -310,6 +310,7 @@
           <div><img src="img/partners/v-cafe.jpg"></div>
           <div><a target="_blank" href="https://www.facebook.com/CastroniOttaviano/?fref=ts"><img src="img/partners/castroni.jpg"></a></div>
           <div><img src="img/partners/ille-roif-roma.jpg"></div>
+          <div><img src="img/partners/torte.jpg"></div>
         </div>
         <div class="row copyright">
           <div class="col-sm-6">
