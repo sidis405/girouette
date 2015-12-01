@@ -14,7 +14,7 @@
 						Gentile Utente,<br>
 						In ottemperanza agli obblighi previsti dal D.lg. n. 196 del 30 Giugno 2003 ("Codice in materia di protezione dei dati personali") con la presente intendiamo informarLa che il trattamento dei dati da Lei liberamente conferiti o in altro modo raccolti nel corso della navigazione sarà effettuato nel rispetto delle norme privacy in vigore; in particolare il trattamento sarà improntato ai principi di correttezza, liceità e trasparenza; i dati saranno pertinenti, completi e non eccedenti; i dati saranno raccolti e registrati per le sole finalità descritte più avanti e conservati per un periodo strettamente necessario a tali scopi.
 					</p>
-					<h3>Privacy delle foto</h3>
+					<h3>Utilizzo del materiale fotografico</h3>
 					<p>E' vietata la riproduzione, la modifica, la duplicazione, la copia, la diffusione, la distribuzione, la vendita o comunque lo sfruttamento del materiale fotografico presente sul sito. L'uso non autorizzato del materiale fotografico contenuto nel sito costituisce violazione delle leggi applicabili sulla proprietà intellettuale e industriale. L'uso di questi materiali su qualsiasi altro sito web è vietato.
 					</p>
 					<h3>Cookies Policy</h3>
