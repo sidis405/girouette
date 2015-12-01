@@ -315,7 +315,7 @@
           <div class="col-sm-6">
             <p>
                
-              La Girouette © 2015 - Tutti i diritti riservati
+              La Girouette © 2015 - Tutti i diritti riservati | <a target="_blank" href="/privacy-policy">Privacy Policy</a>
             </p>
           </div>
           <div class="col-sm-6">

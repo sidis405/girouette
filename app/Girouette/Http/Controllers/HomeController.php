@@ -23,12 +23,17 @@ class HomeController extends Controller
 
     }
 
-    public function pull()
+    public function privacy()
     {
-        $out = '';
-        $result = array();
-        $result = shell_exec("/usr/bin/git -c /home/www/sidrit.com/girouette pull 2>&1");
-        return $result;
+        return view('home.privacy');
     }
+
+    // public function pull()
+    // {
+    //     $out = '';
+    //     $result = array();
+    //     $result = shell_exec("/usr/bin/git -c /home/www/sidrit.com/girouette pull 2>&1");
+    //     return $result;
+    // }
 
 }
