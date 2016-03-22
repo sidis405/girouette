@@ -20,6 +20,8 @@ class AlbumsController extends Controller
     {
         $albums = $album_repo->getAll();
 
+        // return $albums;
+
         return view('admin.albums.index', compact('albums'));
 
     }

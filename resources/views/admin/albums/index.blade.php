@@ -33,7 +33,7 @@
               @foreach($albums as $album)
                 <tr>
                   <td>
-                    <a href="/admin/progetti/{{$album->id}}/modifica"><div class="thumbnail-preview-list" @if($album->featured_image_id > 0) style="background: url('/image/{{$album->featuredImage->id}}/{{$album->featuredImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
+                    <a href="/admin/progetti/{{$album->id}}/modifica"><div class="thumbnail-preview-list" @if($album->featured_image_id > 0 && $album->featuredImage) style="background: url('/image/{{$album->featuredImage->id}}/{{$album->featuredImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
                   </td>
                   <td><a href="/admin/progetti/{{$album->id}}/modifica">{{$album->name}}</a></td>
                   <td><div class="btn btn-green btn-circle ps_trigger" id="ps_trigger_{{$album->id}}" data-id="{{$album->id}}">{{count($album->getMedia())}}</div></td>

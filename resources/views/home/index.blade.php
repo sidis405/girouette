@@ -16,13 +16,15 @@
           </div>
           <div class="row">
           @foreach($albums as $album)
-            <div class="col-md-4 col-sm-6 no-pad">
-              <div class="project"><img src="{{$album->present()->featuredImageUrl()}}" class="project-img" id="ps_trigger_{{$album->id}}" >
-                <div class="project-desc">
-                  <p>{{$album->name}}</p>
+            @if($album->featuredImage)
+              <div class="col-md-4 col-sm-6 no-pad">
+                <div class="project"><img src="{{$album->present()->featuredImageUrl()}}" class="project-img" id="ps_trigger_{{$album->id}}" >
+                  <div class="project-desc">
+                    <p>{{$album->name}}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            @endif
             @include('admin.albums.photoswipe')
           @endforeach
           </div>

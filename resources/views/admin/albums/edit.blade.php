@@ -44,7 +44,7 @@
                       <h3>Immagine di copertina</h3>
                         <div class="form-group">
                           <a id="selected_image_preview">
-                              <div class="thumbnail-preview-add" @if($album->featured_image_id > 0) style="background: url('/image/{{$album->featuredImage->id}}/{{$album->featuredImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
+                              <div class="thumbnail-preview-add" @if($album->featured_image_id > 0 && $album->featuredImage) style="background: url('/image/{{$album->featuredImage->id}}/{{$album->featuredImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
                                 <div class="btn">Scegli immagine di copertina</div>
                               </div>
                           </a>
